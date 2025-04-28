@@ -1,0 +1,14 @@
+{
+  "extends": "@kevisual/types/json/frontend.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*",
+  ],
+}

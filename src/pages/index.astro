@@ -1,0 +1,49 @@
+---
+// import { query } from '@/modules/query.ts';
+console.log('Hello from index.astro');
+import { Test } from '@/components/Test.tsx';
+import '../styles/global.css';
+---
+
+<html lang='en'>
+  <head>
+    <title>My Homepage</title>
+  </head>
+  <body>
+    <h1>Welcome to my website!</h1>
+    <div class='bg-amber-50 w-20 h-20 rounded-full'></div>
+    <div id='root'></div>
+    <Test client:only />
+    <script type='importmap' data-vite-ignore is:inline>
+      {
+        "imports": {
+          "react": "https://esm.sh/react@19.1.0",
+          "react-dom": "https://esm.sh/react-dom@19.1.0/client.js",
+          "react-toastify": "https://esm.sh/react-toastify@11.0.5"
+        }
+      }
+    </script>
+    <script type='module' data-vite-ignore is:inline>
+      import { Button, message } from 'https://esm.sh/antd?standalone';
+      import React from 'react';
+      import { ToastContainer, toast } from 'react-toastify';
+      import { createRoot } from 'react-dom';
+      setTimeout(() => {
+        toast.loading('Hello from index.astro');
+        window.toast = toast;
+        console.log('message', toast);
+      }, 1000);
+      console.log('Hello from index.astro', Button);
+      const root = document.getElementById('root');
+      const render = createRoot(root);
+      const App = () => {
+        const button = React.createElement(Button, null, 'Hello');
+        const messageEl = React.createElement(ToastContainer, null, 'Hello');
+        const wrapperMessage = React.createElement('div', null, [button, messageEl]);
+        return wrapperMessage;
+      };
+      // render.render(React.createElement(Button, null, 'Hello'), root);
+      render.render(App(), root);
+    </script>
+  </body>
+</html>

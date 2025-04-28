@@ -1,0 +1,13 @@
+# .cnb.yml
+$:
+  vscode:
+    - docker:
+        image: docker.cnb.cool/kevisual/dev-env:latest
+      services:
+        - vscode
+        - docker
+      imports: https://cnb.cool/kevisual/env/-/blob/main/env.yml
+      # 开发环境启动后会执行的任务
+      stages:
+        - name: pnpm install
+          script: pnpm install

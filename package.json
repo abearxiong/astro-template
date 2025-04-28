@@ -1,0 +1,47 @@
+{
+  "name": "@kevisual/astro-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "basename": "/",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "pub": "envision deploy ./dist -k vite-react -v 0.0.1",
+    "git:submodule": "git submodule update --init --recursive"
+  },
+  "keywords": [],
+  "author": "abearxiong <xiongxiao@xiongxiao.me> (https://www.xiongxiao.me)",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@astrojs/mdx": "^4.2.5",
+    "@astrojs/react": "^4.2.5",
+    "@kevisual/query": "^0.0.17",
+    "@tailwindcss/vite": "^4.1.4",
+    "astro": "^5.7.7",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "lodash-es": "^4.17.21",
+    "lucide-react": "^0.503.0",
+    "nanoid": "^5.1.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-toastify": "^11.0.5",
+    "zustand": "^5.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.4",
+    "commander": "^13.1.0",
+    "dotenv": "^16.5.0",
+    "inquire": "^0.4.8",
+    "@kevisual/types": "^0.0.7",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2"
+  },
+  "packageManager": "pnpm@10.10.0"
+}
