@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "basename": "/",
+  "basename": "root/astro-template",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -17,10 +17,11 @@
   "type": "module",
   "dependencies": {
     "@astrojs/mdx": "^4.2.5",
-    "@astrojs/react": "^4.2.5",
+    "@astrojs/react": "^4.2.6",
+    "@astrojs/sitemap": "^3.3.1",
     "@kevisual/query": "^0.0.17",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.7",
+    "astro": "^5.7.9",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "lodash-es": "^4.17.21",
@@ -35,13 +36,13 @@
     "access": "public"
   },
   "devDependencies": {
-    "tailwindcss": "^4.1.4",
+    "@kevisual/types": "^0.0.9",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "commander": "^13.1.0",
     "dotenv": "^16.5.0",
     "inquire": "^0.4.8",
-    "@kevisual/types": "^0.0.7",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2"
+    "tailwindcss": "^4.1.4"
   },
   "packageManager": "pnpm@10.10.0"
 }
