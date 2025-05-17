@@ -3,20 +3,18 @@
 console.log('Hello from index.astro');
 import { Test } from '@/components/Test.tsx';
 import '../styles/global.css';
-// import { Button } from '@kevisual/components/button/index.tsx';
-import { Button } from '@mui/material'
 ---
 
 <html lang='en'>
   <head>
     <title>My Homepage</title>
-  </head>e 
+  </head>e
   <body>
-    <h1>Welcome to my website!</h1>
+    <h1 onclick="{onClick}">Welcome to my website!</h1>
     <div class='bg-amber-50 w-20 h-20 rounded-full'></div>
     <div id='root'></div>
     <Test client:only />
-    <Button  client:only="react">sdf sdf</Button>
+    <!-- <Button  client:only="react">sdf sdf</Button> -->
     <script type='importmap' data-vite-ignore is:inline>
       {
         "imports": {

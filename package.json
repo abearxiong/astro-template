@@ -9,46 +9,48 @@
     "build": "astro build",
     "preview": "astro preview",
     "pub": "envision deploy ./dist -k vite-react -v 0.0.1",
-    "git:submodule": "git submodule update --init --recursive"
+    "git:submodule": "git submodule update --init --recursive",
+    "sn": "pnpm dlx shadcn@latest add "
   },
   "keywords": [],
   "author": "abearxiong <xiongxiao@xiongxiao.me> (https://www.xiongxiao.me)",
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@astrojs/mdx": "^4.2.5",
-    "@astrojs/react": "^4.2.6",
-    "@astrojs/sitemap": "^3.3.1",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@kevisual/query": "^0.0.17",
-    "@kevisual/query-login": "^0.0.4",
-    "@mui/material": "^7.0.2",
-    "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.9",
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/react": "^4.2.7",
+    "@astrojs/sitemap": "^3.4.0",
+    "@kevisual/query": "^0.0.18",
+    "@kevisual/query-login": "^0.0.5",
+    "@kevisual/registry": "^0.0.1",
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "^5.7.13",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "lodash-es": "^4.17.21",
-    "lucide-react": "^0.503.0",
+    "lucide-react": "^0.511.0",
     "nanoid": "^5.1.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-toastify": "^11.0.5",
-    "tailwind-merge": "^3.2.0",
-    "zustand": "^5.0.3"
+    "tailwind-merge": "^3.3.0",
+    "zustand": "^5.0.4"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "@kevisual/components": "workspace:*",
-    "@kevisual/types": "^0.0.9",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
+    "@kevisual/query-awesome": "^0.0.2",
+    "@kevisual/types": "^0.0.10",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-basic-ssl": "^2.0.0",
     "commander": "^13.1.0",
     "dotenv": "^16.5.0",
     "inquire": "^0.4.8",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.7",
+    "tw-animate-css": "^1.3.0"
   },
-  "packageManager": "pnpm@10.10.0"
+  "packageManager": "pnpm@10.11.0"
 }
