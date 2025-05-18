@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "basename": "root/astro-template",
+  "basename": "/root/astro-template",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "pub": "envision deploy ./dist -k vite-react -v 0.0.1",
+    "pub": "envision deploy ./dist -k astro-template -v 0.0.1 -u",
     "git:submodule": "git submodule update --init --recursive",
     "sn": "pnpm dlx shadcn@latest add "
   },
@@ -46,7 +46,7 @@
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-basic-ssl": "^2.0.0",
-    "commander": "^13.1.0",
+    "commander": "^14.0.0",
     "dotenv": "^16.5.0",
     "inquire": "^0.4.8",
     "tailwindcss": "^4.1.7",
